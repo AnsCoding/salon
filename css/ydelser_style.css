@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=kanit&display=swap');
+body{
+    background-color: #ecebe6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding: 1em;
+    width: 90%;
+    margin: 0 auto;
+}
+main {
+    width: 100%;
+    padding-top: 2rem;
+    font-family: "Roboto", serif;
+}
+
+h1 {
+    color: #262626;
+    font-family: 'Kanit', sans-serif;
+}
+
+.indhold {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h3 {
+    padding: 1em 0;
+    text-align: left;
+}
+
+.behandlinger_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 600px;
+    min-width: 350px;
+    margin-bottom: 15px;
+}
+
+.card:last-child {
+    margin-bottom: 30px;
+}
+
+.behandling_img {
+    display: block;
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    margin: 0;
+}
+
+.card_item {
+    text-decoration: none;
+    background-color: #262626;
+    color: #ecebe6;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    height: 2rem;
+}
+
+.card_text {
+    width: 75%;
+    float: left;
+    padding-left: 15px;
+}
+
+.card_price {
+    width: 25%;
+    float: right;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.produkter_flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.produkt_img {
+    float: left;
+    width: 40%;
+    height: 6.25rem;
+}
+
+.prod_description {
+    float: right;
+    height: 6.25rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #262626;
+    width: 60%;
+}
+footer p {
+    padding-right: 2em;
+}
+
+/* PC view media query */
+@media only screen and (min-width: 900px) {
+
+    .indhold {
+        max-width: 60%;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    
+    .prod_description h4, p {
+        font-size: 1.25rem;
+    }
+    
+    .prod_description p {
+        width: 200px;
+    }
+    
+    .card {
+        flex: 1 0 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+}

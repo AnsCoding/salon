@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=kanit&display=swap');
+body{
+    background-color: #ecebe6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.om_os_background {
+    background-color: #262626;
+}
+
+.om_os_img {
+    display: block;
+    width: 100%;
+}
+
+.heading {
+    background-color: #ecebe6;
+    color: #262626;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.om_os_text {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    background-color: #ecebe6;
+    color: #262626;
+    font-size: 1rem;
+    padding: 0 25px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+.employee_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.employ_img {
+    width: 90%;
+    max-width: 400px;
+    max-height: 350px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.employ_text {
+    text-align: left;
+    padding: 0 5%;
+    margin-bottom: 25px;
+}
+
+footer p {
+    padding-right: 2em;
+}
+
+/* PC view media query */
+@media only screen and (min-width: 900px) {
+    
+    .om_os_img {
+        max-width: 45%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .heading {
+        font-size: 3rem;
+    }
+    
+    .om_os_text {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0 20%;
+        margin-bottom: 100px;
+    }
+    
+    .employee_flex {
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .card:first-child {
+        margin-right: 20%;
+    }
+    
+    .employ_text {
+        font-size: 1.5rem;
+        margin-bottom: 100px;
+    }
+}
+

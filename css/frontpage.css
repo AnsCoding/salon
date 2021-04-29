@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=kanit&display=swap');
+body{
+    background-color: #ecebe6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+#info {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.info_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    flex: 1;
+    max-width: 500px;
+}
+
+.info_img {
+    width: 35%;
+    margin-bottom: 25px;
+}
+
+.info_text {
+    width: 65%;
+    text-decoration: none;
+    color: #262626;
+    font-size: 1.5rem;
+}
+
+.txt_left {
+    float: right;
+    padding: 30px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.txt_right {
+    float: left;
+    padding: 16px 0;
+    padding-right: 20px;
+    text-align: right;
+}
+
+#card_pc {
+    display: none;
+}
+
+#card_mobile {
+    display: flex;
+}
+
+#card_open_hours {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+    color: #262626;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#article {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+}
+
+.article_img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.article_text {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #262626;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    padding-right: 2em;
+}
+
+/* PC view media query */
+@media only screen and (min-width: 900px) {
+
+    .info_flex {
+        margin: 40px auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .txt_left {
+        padding: 58px 0;
+        padding-left: 20px;
+    }
+
+    #card_pc {
+        display: flex;
+    }
+
+    #card_mobile {
+        display: none;
+    }
+
+    #open_hours_mobile {
+        display: none;
+    }
+
+    #article {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 40px;
+    }
+
+}

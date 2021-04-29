@@ -1,0 +1,52 @@
+body{
+    background-color: #ecebe6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding: 1em;
+    width: 90%;
+    margin: 0 auto;
+}
+.billede-container{
+    margin-bottom: 3em;
+}
+.billede{
+    padding: 1em;
+    width: 350px;
+    height: 260px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+h2{
+    color: #262626;
+    padding-top: .5em;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: .5em;
+}
+h1{
+    color: #262626;
+    padding-top: .5em;
+    font-family: 'Kanit', sans-serif;
+}
+
+main p{
+    text-align: center;
+    margin: 1em auto 3em auto;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+footer p {
+    padding-right: 2em;
+}
